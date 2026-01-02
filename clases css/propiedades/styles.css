@@ -1,0 +1,21 @@
+h1{
+    color: rgb(77, 66, 172);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:line-through;
+}
+p{
+    font-family:montserrat;
+    text-align:right;
+    font-size: 13px;
+   
+    line-height: 2;
+    letter-spacing: 2px;
+    background-color: aquamarine;
+
+}
+span{
+    font-style: italic;
+    text-transform: uppercase;
+}
