@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*paleta de colores*/
+:root {
+    --bg-main: #2b1a0f;        /* marrón oscuro */
+    --bg-soft: #f3e3c7;        /* beige claro */
+    --accent-gold: #f2c66d;    /* dorado */
+    --accent-warm: #c0893d;    /* ámbar */
+    --text-dark: #2a1a0f;
+    --text-light: #f8f4ec;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    /*background:var(--accent-warm);*/
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.header{
+
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    position: relative;
+    /*background: #2a1a0f;*/
+    /*height: 50px;*/
+
+    
+}
+
+/*menu*/
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+font-size: 32px;
+color:#f2c66d;
+text-transform: uppercase;
+font-weight: 800;
+
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 16px;
+    padding: 16px;
+    font-weight: 600;
+    color:#bd9761;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color:#f2c66d
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icon{
+    width: 32px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/*submenu*/
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color:#f2c66d;
+    padding: 20px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgb(0, 0,0,0.2);
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color:#2a1a0f;
+}
+
+.borrar {
+    background-color:#2a1a0f;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #f2c66d;
+    font-weight: 800;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-txt{
+    width: 50%;
+}
+
+
