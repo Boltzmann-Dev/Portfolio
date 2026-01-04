@@ -20,13 +20,15 @@
 }
 
 body{
-    /*background:var(--accent-warm);*/
+    background:var(--accent-warm);
     font-family: "Montserrat", sans-serif;
+
 }
 
 .container{
     max-width:1200px;
     margin: 0 auto;
+    
 }
 
 .header{
@@ -52,6 +54,8 @@ body{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    background-color: rgba(32, 27, 22, 0.5);
+    border-radius: 5px;
 }
 
 .logo{
@@ -200,6 +204,23 @@ th, td{
     
 }
 .header-img img{
-    max-width: 508px;
+    max-width: 507px;
     
+    
+}
+
+
+.bg2{
+    
+    position: absolute;
+    top: 750px;
+    width: 100%;
+    z-index: 5;
+    background-color: #f3e3c7;
+}
+.conocimiento{
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 10;
 }
