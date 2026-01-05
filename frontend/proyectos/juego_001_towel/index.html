@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background: black;
+            margin: 0;
+            display: grid;
+            place-content: center;
+            height: 100vh;
+
+        }
+        canvas {
+            border: 1px solid white;
+        }
+    </style>
+
+    <script type="module">
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');    
+
+
+        const MODES = {
+            FALL:"fall",
+            BOUNSE:"bounse",
+            GAMEOVER:"gameover"
+            
+        }
+
+        const INITIAL_BOX_WIDTH = 200;
+    </script>
+
+    
 </head>
 <body>
+    <canvas id="canvas" width="320" height="500"></canvas>
+
+
     
+
 </body>
 </html>
