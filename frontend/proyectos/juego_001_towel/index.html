@@ -48,14 +48,16 @@
                     width: INITIAL_BOX_WIDTH,
                     color: "white"
 
-                }];
+            }];
 
-                current = 1;
-                mode = MODES.BOUNCE;  
-                xSpeed = INITIAL_X_SPEED;
-                ySpeed = INITIAL_Y_SPEED;
-                scrollCounter = 0;
-                cameraY = 0;          
+            current = 1;
+            mode = MODES.BOUNCE;  
+            xSpeed = INITIAL_X_SPEED;
+            ySpeed = INITIAL_Y_SPEED;
+            scrollCounter = 0;
+            cameraY = 0;   
+
+            createNewBox();
         }
 
         function restart(){
@@ -84,7 +86,16 @@
                 context.fillStyle = color;
                 context.fillRect(x, newY, width, BOX_HEIGHT);
             });
-        }            
+        }     
+        
+        function createNewBox(){
+            boxes[current]= {
+                x: 0,
+                y: (current + 10) * BOX_HEIGHT,
+                width: boxes[current -1].width,
+                color: "white"
+            }
+        }
 
             
 
