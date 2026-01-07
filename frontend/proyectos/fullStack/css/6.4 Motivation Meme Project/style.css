@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+body{
+    text-align: center;
+    background: black;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(2px, 1.5vw, 20px);
+    
+}
+div{
+    width: 50%;
+    margin-left: 25%;
+    height: 30%;
+    margin-top: 4%;
+    
+
+}
+img{
+    border: 5px solid darkorange;
+    width: 100%;
+}
+h1{
+    padding: 5px;
+    text-transform: uppercase;
+}
