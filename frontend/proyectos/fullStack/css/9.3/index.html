@@ -11,10 +11,89 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
+        
+      }
+
+      .pricing-container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10%;
+        
+        }
+      .pricing-plan {
+        border-radius: 50%;
+        margin-bottom: 10px;
+        background: rgb(69, 150, 69);
+        flex-basis: 250px;
+        text-align: center;
+        padding: 20px 10px;
+        
+      }
+      .plan-title{
+      
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .plan-price{
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      .plan-features > *{
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+        
+      }
+      .plan-button{
+        background: rgb(38, 27, 192);
+        color: white;
+        border-radius: 14%;
+        padding: 8px;
       }
 
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
+      @media (max-width: 750px) {
+      .pricing-container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0%;
+
+        
+        }
+      .pricing-plan {
+        width: 250px;
+        border-radius: 5%;
+        margin-bottom: 10px;
+        background: rgb(225, 231, 225);
+        flex-basis: 200px;
+        text-align: center;
+        padding: 20px 10px;
+      }
+      .plan-title{
+      
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .plan-price{
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      .plan-features > *{
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+        
+      }
+      .plan-button{
+        background: rgb(235, 121, 69);
+        color: white;
+        border-radius: 14%;
+        padding: 8px;
+      }
+        
       }
     </style>
   </head>
