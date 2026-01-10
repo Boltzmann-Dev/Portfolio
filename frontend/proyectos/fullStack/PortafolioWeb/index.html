@@ -8,17 +8,54 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <style>
-        .hero {
-            background-image: url("./assest/imagenes/bg.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 80vh;
+        .hero{
+            position: relative;
+            
+            overflow: hidden;
         }
-        h1{
-            color:rgb(251, 255, 0);
+        .bg-h{
+            position: absolute;
+            inset: 0;
+            display: flex;
+        }
+        .bg-h-black{
+            background: black;
+            width: 72%;
+            height: 470px;
+        }
+        .bg-h-yellow{
+            background: #ffde59;
+            width: 28%;
+            height: 470px;
+        }
+        .hero-content{
+            min-height: 700px;
+            position: relative;
+            
+            width: 100%;
+            
             
         }
+        .container{
+            
+            display: flex;
+            
+        }
+        .text-hero{
+            position: relative;
+            top: 20vh;
+            width: 65%;
+            height: 50vh;
+            color: #ffde59;
+            text-align: right;
+            
+        }
+        .img-hero{
+            position: relative;
+            top: 13vh;
+            
+        }
+
     </style>
 
 </head>
@@ -28,18 +65,55 @@
 
     
     <section class="hero">
-        
-        <div class="container col-xxl-8 py-5"> 
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
-                <div class="col-10 col-sm-8 col-lg-6"> 
-                    <img src="./assest/imagenes/Diego.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="200"  loading="lazy"> 
+        <div class="bg-h">
+            <div class="bg-h-black"></div>
+            <div class="bg-h-yellow"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="text-hero">
+                    <h1>Diego Alejandro Arbelaez V.</h1>
+                    <p>lorem lorem lorem lorem</p>
+                    
+                </div>
+                <div class="img-hero"><img src="./assest/imagenes/Diego.png" width="170px"  alt="foto cuerpo entero, con traje elegante de Diego Alejandro Arbeláez Vasquez"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container px-4 py-5" id="hanging-icons"> 
+            <h2 class="pb-2 border-bottom">Hanging icons</h2> 
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3"> 
+                <div class="col d-flex align-items-start"> 
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#toggles2"></use>
+                        </svg> 
+                    </div> 
+                    <div> 
+                        <h3 class="fs-2 text-body-emphasis">Featured title</h3> <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> <a href="#" class="btn btn-primary">Primary button</a> 
+                    </div> 
                 </div> 
-                <div class="col-lg-6" > 
-                    <h1 class="display-5 fw-bold  lh-1 mb-3 justify-content-md-end">Diego Arbeláez</h1> 
-                    <p class="lead">Desarrollaror FullStack</p> 
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end"> 
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> 
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> 
+                <div class="col d-flex align-items-start"> 
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#cpu-fill"></use>
+                        </svg> 
+                    </div> 
+                    <div> 
+                        <h3 class="fs-2 text-body-emphasis">Featured title</h3> <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> <a href="#" class="btn btn-primary">Primary button</a> 
+                    </div> 
+                </div> 
+                <div class="col d-flex align-items-start"> 
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#tools"></use>
+                        </svg> 
+                    </div> 
+                    <div> 
+                        <h3 class="fs-2 text-body-emphasis">Featured title</h3> <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> <a href="#" class="btn btn-primary">Primary button</a> 
                     </div> 
                 </div> 
             </div> 
