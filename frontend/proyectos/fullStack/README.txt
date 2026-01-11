@@ -89,7 +89,19 @@ CSS
 	float: right;
 	clear: both; right; left;
 
-8.3)  	@media (max-width: 600px) {		//Media query
+8.2)	RESPONSIVES FORMS
+
+->	flex
+	.flex-container {
+      	display: flex;
+    	}
+	.second {
+      	flex: 0.5;
+    	}
+
+->	Media query 
+	
+	@media (max-width: 600px) {		//Media query
 	
 	/* CSS for screens below or equal to 600px wide */
       		div {
@@ -103,6 +115,57 @@ CSS
         		background-color: lightsalmon;
       		}
     	}
+	
+->   	grid	
+
+	.grid-container {
+      	display: grid;
+      	grid-template-columns: 1fr 1fr;
+      	grid-template-rows: 100px 200px 200px;
+      	gap: 30px;
+    	}
+	.first {
+      	grid-column: span 2;
+    	}
+
+-> 	Bootstrap
+
+	<div class="container">
+    		<div class="row">
+      			<div class="card col-6">
+        			Card
+      			</div>
+      			<div class="card col-2">
+        			Card
+      			</div>
+      			<div class="card col-4">
+        			Card
+      			</div>
+    		</div>
+  	</div>
 
 
-		
+
+
+9) 	FLEX
+
+	flex-direction: row | column | row-reverse | column-reverse
+
+	.flex-container{
+     	height: 50vh;
+   	display: flex;
+ 	flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: center;
+     	align-content:space-around | space-betweeb | end | star | center
+    	align-items:center;
+            
+            
+            
+        }
+
+
+	 
+
+
+
