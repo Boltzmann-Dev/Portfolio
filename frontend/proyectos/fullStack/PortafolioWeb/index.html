@@ -56,6 +56,37 @@
             
         }
 
+        .flexi{
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-content:;
+            align-items:center;
+            
+            
+            
+        }
+        .green{
+            background: green;
+            height: 20vh;
+            align-self: end;
+            flex-basis: 100px;
+            
+        }
+        .red{
+            background:red;
+            height: 20vh;
+            flex-basis: 300px;
+            
+        }
+        .blue{
+            background: blue;
+            height: 30vh;
+            flex-basis: 300px;
+        }
+
     </style>
 
 </head>
@@ -119,6 +150,11 @@
             </div> 
         </div>
     </section>
+    <div class="flexi">
+        <div class="red" ></div>
+        <div class="blue" ></div>
+        <div class="green" ></div>
+    </div>
 
 </body>
 </html>
