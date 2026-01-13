@@ -155,14 +155,28 @@ CSS
      	height: 50vh;
    	display: flex;
  	flex-direction: row;
-    	flex-wrap: wrap;
+	
+	wrap			con wrap el align-content es el nuevo align-items
+	
+    	flex-wrap: wrap; | nowrap | wrap-reverse
     	justify-content: center;
      	align-content:space-around | space-betweeb | end | star | center
     	align-items:center;
-            
-            
-            
+	gap: 10px;  2rem for 3 items     
         }
+
+	
+	SIZE FLEX
+
+	content width< width < flex-basis < min|max-width 
+
+	flex-grow: 1; | 0; 	crecer
+	flex-shrink: 1; 0;	encogerse
+	flex-basis: 0;		auto basis
+
+	flex: 1 1 0; 		grow:1 shrink:1 basis:auto 
+	flex: 1; | 2; | 1.5;	same, activa grow es la diferencia y se ignora basis
+
 
 
 	 
