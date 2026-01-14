@@ -8,6 +8,70 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <style>
+        
+
+        .flex-navbar{
+            position: absolute;
+            inset: 0;
+            display: flex;
+            max-height: 40px;
+            gap: 5px;
+            
+            
+            
+        }
+        .flex-navbar > .item{
+            color: white;
+            display: flex;
+            font-size:medium;
+            margin-top: 4px;
+            
+        }
+        
+        .item.logo-img{
+            flex: 1.2;
+            font-size:xx-large;
+            margin-top: 0;
+            padding-top: 0;
+            margin-left: 6px;
+            
+        }
+        .item.list{
+            gap: 5px;
+            flex: 1.8;
+            flex-wrap: wrap;
+            max-width: 500px;
+            min-width: 210px;
+            text-align: center;
+            
+        }
+        .item.about{
+            flex: 1;
+            min-width: 80px;
+        }
+        .item.skills{
+            flex: 0.7;
+            
+        }
+        .item.exp{
+            flex: 1;
+        }
+        .item.proy{
+            flex: 1;
+        }
+        .item.cont{
+            flex: 1;
+            justify-content: center;
+            color: black;
+            font-weight: 900;
+            min-width: 25%;
+        }
+        
+
+
+
+
+
         .hero{
             position: relative;
             
@@ -20,12 +84,12 @@
         }
         .bg-h-black{
             background: black;
-            width: 72%;
+            flex: 3;
             height: 470px;
         }
         .bg-h-yellow{
             background: #ffde59;
-            width: 28%;
+            flex: 1;
             height: 470px;
         }
         .hero-content{
@@ -87,6 +151,8 @@
             flex-basis: 300px;
         }
 
+
+
     </style>
 
 </head>
@@ -95,16 +161,33 @@
 <body>
 
     
+    
     <section class="hero">
+
         <div class="bg-h">
             <div class="bg-h-black"></div>
             <div class="bg-h-yellow"></div>
         </div>
+
+        <div class="flex-navbar">
+            <div class="logo-img item">DA</div>
+            
+            <div class="item list">
+                    <div class="item about">About me</div>
+                    <div class="item skills">Conocimientos</div>
+                    <div class="item exp">Experiencia</div>
+                    <div class="item proy">Proyectos</div> 
+            </div>
+            <div class="item cont">Contáctame</div>   
+                
+            
+        </div>
+
         <div class="hero-content">
             <div class="container">
                 <div class="text-hero">
-                    <h1>Diego Alejandro Arbelaez V.</h1>
-                    <p>lorem lorem lorem lorem</p>
+                    <h1>Diego Alejandro <br> Arbelaez V.</h1>
+                    <p>Desarrollador <span>FullStack</span></p>
                     
                 </div>
                 <div class="img-hero"><img src="./assest/imagenes/Diego.png" width="170px"  alt="foto cuerpo entero, con traje elegante de Diego Alejandro Arbeláez Vasquez"></div>
