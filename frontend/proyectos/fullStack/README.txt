@@ -120,8 +120,9 @@ CSS
 
 	.grid-container {
       	display: grid;
-      	grid-template-columns: 1fr 1fr;
-      	grid-template-rows: 100px 200px 200px;
+      	grid-template-columns: 1fr 1fr | auto 400px minmax(200px,500px);
+	
+      	grid-template-rows: 200px 200px; | repeat(2, 200px)
       	gap: 30px;
     	}
 	.first {
@@ -178,8 +179,22 @@ CSS
 	flex: 1; | 2; | 1.5;	same, activa grow es la diferencia y se ignora basis
 
 
+	
+	 grid	
 
-	 
+	.grid-container {
+      	display: grid;
+      	grid-template-columns: 1fr 1fr | auto 400px minmax(200px,500px);
+	
+      	grid-template-rows: 200px 200px; | repeat(2, 200px)
+      	gap: 30px;
+    	}
+	.items {
+      	grid-column: span 2;	
+	grid-column-start:3;
+	grid-column-end:2;
+	grid-column:4/6
+    	}
 
 
 
