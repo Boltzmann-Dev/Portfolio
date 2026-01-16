@@ -1,0 +1,1 @@
+alert("text");      cuadro de emergencia mensaje chuleable
