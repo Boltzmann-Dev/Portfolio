@@ -1,5 +1,5 @@
 
-const images = [
+/*const images = [
     "./images/crash.png",
     "./images/kick.png",
     "./images/snare.png",
@@ -7,18 +7,7 @@ const images = [
     "./images/tom2.png",
     "./images/tom3.png",
     "./images/tom4.png",
-];
-let instrument =document.querySelectorAll("button").length;
-for (let i =0;i<instrument;i++){
-document.querySelectorAll("button")[i].querySelector("img").setAttribute("src",images[i]);
-document.querySelectorAll("button")[i].addEventListener("click",function handleClik(){
-    const audio = new Audio(audios[i]);
-    audio.play();
-});
-}
-
-
-
+];*/
 const audios = [
     "./sounds/crash.mp3",
     "./sounds/kick-bass.mp3",
@@ -28,3 +17,22 @@ const audios = [
     "./sounds/tom-3.mp3",
     "./sounds/tom-4.mp3",
 ];
+
+
+let instrument =document.querySelectorAll(".drum").length;
+const button = document.querySelectorAll(".drum");
+for (let i =0;i<instrument;i++){
+
+/*button.style.width = "150px";
+button.style.height = "150px";
+button.style.backgroundImage = "url('" + images[i]+"')";*/
+
+button[i].addEventListener("click",function handleClik(){
+    const audio = new Audio(audios[i]);
+    audio.play();
+});
+
+}
+
+
+
