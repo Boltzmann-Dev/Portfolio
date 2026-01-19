@@ -43,6 +43,10 @@ footer {
 .l {
 
 }
+button img{
+  width: 100px;
+  height: 100px;
+}
 
 .set {
   margin: 10% auto;
