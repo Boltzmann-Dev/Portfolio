@@ -7,8 +7,8 @@ const drum = document.querySelectorAll(".drum");
 console.log(drum);
 for (let i=0;i<drum.length;i++){
     drum[i].addEventListener("click",function(event){
-        console.log(this.innerHTML)
-        playSound(this.innerHTML)
+        console.log(this.innerHTML);
+        playSound(this.innerHTML);
         
     })
 }
