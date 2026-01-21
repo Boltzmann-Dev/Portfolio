@@ -1,5 +1,0 @@
-var name = prompt("What is your name?");
-var primera = name.slice(0,1);
-var primera = primera.toUpperCase();
-var segunda = name.slice(1,20).toLowerCase();
-alert("hello " + primera + segunda);
